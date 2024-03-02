@@ -1,0 +1,44 @@
+site_name: Labs4grabs.io Docs
+site_url: https://docs.labs4grabs.io/
+use_directory_urls: false
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+plugins:
+  - mike:
+      canonical_version: null
+      version_selector: true
+
+copyright: |
+  For support reach out via 
+  <a 
+    href="mailto:info@labs4grabs.io"
+    onmouseover="this.href=this.href.replace(',', '.')">
+    info@labs4grabs.io
+  </a>
+
+theme:
+  name: material
+  font:
+    text: Roboto
+  features:
+    - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+nav:
+  - Getting started: index.md
+  - Windows: windows.md
+
+extra:
+  version:
+    provider: mike
