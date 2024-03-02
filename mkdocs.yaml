@@ -1,11 +1,13 @@
 site_name: Labs4grabs.io Docs
 site_url: https://docs.labs4grabs.io/
 use_directory_urls: false
+repo_url: https://github.com/labs4grabs/docs
 
 markdown_extensions:
   - attr_list
   - md_in_html
   - admonition
+  - tables
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
@@ -14,6 +16,7 @@ markdown_extensions:
 
 
 plugins:
+  - search
   - mike:
       canonical_version: null
       version_selector: true
@@ -34,6 +37,8 @@ theme:
     - toc.integrate
     - navigation.tabs
     - navigation.tabs.sticky
+  icon:
+    repo: fontawesome/brands/github
 
 nav:
   - Getting started: index.md
@@ -42,3 +47,12 @@ nav:
 extra:
   version:
     provider: mike
+  social:
+    - icon: fontawesome/brands/slack
+      link: https://labs4grabs.slack.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/labs4grabs
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/stefanroman
+    - icon: fontawesome/solid/globe
+      link: https://labs4grabs.io/
